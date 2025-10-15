@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera Ass 1 </title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .menu{
+            font-family: Arial, sans-serif;
+            justify-content: space-between;
+            gap: 2%;
+        }
+
+        .chicken, .beef, .sushi{
+            box-sizing: border-box;
+            width: 30%;
+            min-height: 250px; /* Minimum height */
+            height: auto; /* Grow with content */
+            float:left;
+            border:  rgb(37, 35, 33) 2px solid;
+            background-color: #f0d0ee;
+            margin-inline-end: 1%;
+            margin-inline-start: 2%; 
+        }
+
+        h2{
+            text-align: center;
+            padding: 2%;
+            border: 2px solid black;
+            width:40%;
+            box-sizing: border-box;
+            margin: 0 0 0 60%;
+            background-color: #827d7d;
+        }
+        p{
+            padding: 0px 20px 10px 20px;
+            text-align: justify;
+        }
+
+        .hChicken{
+            background-color: #e771ca;
+        }
+
+        .hBeef{
+            background-color: #f49494;
+        }
+
+        .hSushi{
+            background-color: #8979d3;
+        }
+
+
+        @media (min-width: 768px) and (max-width: 991px) {
+    .chicken, .beef {
+        width: 48%;
+        float: left;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        margin: 0px 1% 20px 1%;
+    }
+    
+ 
+    
+    .sushi {
+        width: 96%;
+        clear: both;
+        min-height: 100px; /* Minimum height */
+        height: auto; /* Grow with content */
+    }
+    
+} 
+@media (max-width: 767px) {
+    .chicken, .beef, .sushi {
+        width: 96%;
+        clear: both;
+        min-height: 100px; /* Minimum height */
+        height: auto; /* Grow with content */
+        margin: 0px 2% 20px 2%;
+    }   
+}
+
+
+
+       
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="title">
+            <h1>Our Menu</h1>
+        </div>
+
+        <div class="chicken">
+            <h2 class="hChicken">Chicken</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>  
+        </div>
+
+        <div class="beef">
+            <h2 class="hBeef">Beef</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+        <div class="sushi">
+            <h2 class="hSushi">Sushi</h2>
+            <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+        </div>
+    </div>
+</body>
+</html>
